@@ -41,7 +41,7 @@ void app_main() {
     // Setting measurement timing budget and signal rate limit (example values)
     vl53l0x_setMeasurementTimingBudget(sensor, 20000);
     vl53l0x_setSignalRateLimit(sensor, 0.25);
-
+    printf(" %u address",vl53l0x_getAddress(sensor));
     // Starting continuous measurement with a period of 20 ms
     vl53l0x_startContinuous(sensor, 20);
 
@@ -54,6 +54,6 @@ void app_main() {
 
     // Stopping continuous measurement
     vl53l0x_stopContinuous(sensor);
-
+    // vl53l0x_end(sensor);
     vTaskDelete(NULL);
 }

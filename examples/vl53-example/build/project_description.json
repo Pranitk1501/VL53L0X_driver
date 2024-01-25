@@ -1,7 +1,7 @@
 {
     "version":            "1",
     "project_name":       "vl53-example",
-    "project_version":    "81f7260-dirty",
+    "project_version":    "1e6819f-dirty",
     "project_path":       "/home/pranit/esp/Be_project/VL53/examples/vl53-example",
     "idf_path":           "/home/pranit/esp/esp-idf",
     "build_dir":          "/home/pranit/esp/Be_project/VL53/examples/vl53-example/build",
