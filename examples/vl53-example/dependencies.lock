@@ -1,0 +1,15 @@
+dependencies:
+  Be_project/VL53:
+    component_hash: null
+    source:
+      path: /home/pranit/esp/Be_project/VL53
+      type: local
+    version: '*'
+  idf:
+    component_hash: null
+    source:
+      type: idf
+    version: 5.2.0
+manifest_hash: e76828a1d47e6418051894b560301a570524563761956f81f0ebd9329f507a5d
+target: esp32s3
+version: 1.0.0

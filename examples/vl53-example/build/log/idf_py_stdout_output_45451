@@ -1,0 +1,80 @@
+[0/1] Re-running CMake...
+-- Building ESP-IDF components for target esp32s3
+Processing 2 dependencies:
+[1/2] Be_project/VL53 (*)
+[2/2] idf (5.2.0)
+-- Project sdkconfig file /home/pranit/esp/Be_project/VL53/examples/vl53-example/sdkconfig
+-- Compiler supported targets: xtensa-esp32s3-elf
+-- App "vl53-example" version: 81f7260-dirty
+-- Adding linker script /home/pranit/esp/Be_project/VL53/examples/vl53-example/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/pranit/esp/esp-idf/components/esp_system/ld/esp32s3/sections.ld.in
+-- Adding linker script /home/pranit/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script /home/pranit/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script /home/pranit/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script /home/pranit/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script /home/pranit/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
+-- Adding linker script /home/pranit/esp/esp-idf/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+-- Components: VL53 app_update bootloader bootloader_support cxx driver efuse esp_app_format esp_bootloader_format esp_common esp_hw_support esp_mm esp_partition esp_pm esp_ringbuf esp_rom esp_system esp_timer esptool_py freertos hal heap log main mbedtls newlib partition_table pthread soc spi_flash xtensa
+-- Component paths: /home/pranit/esp/Be_project/VL53 /home/pranit/esp/esp-idf/components/app_update /home/pranit/esp/esp-idf/components/bootloader /home/pranit/esp/esp-idf/components/bootloader_support /home/pranit/esp/esp-idf/components/cxx /home/pranit/esp/esp-idf/components/driver /home/pranit/esp/esp-idf/components/efuse /home/pranit/esp/esp-idf/components/esp_app_format /home/pranit/esp/esp-idf/components/esp_bootloader_format /home/pranit/esp/esp-idf/components/esp_common /home/pranit/esp/esp-idf/components/esp_hw_support /home/pranit/esp/esp-idf/components/esp_mm /home/pranit/esp/esp-idf/components/esp_partition /home/pranit/esp/esp-idf/components/esp_pm /home/pranit/esp/esp-idf/components/esp_ringbuf /home/pranit/esp/esp-idf/components/esp_rom /home/pranit/esp/esp-idf/components/esp_system /home/pranit/esp/esp-idf/components/esp_timer /home/pranit/esp/esp-idf/components/esptool_py /home/pranit/esp/esp-idf/components/freertos /home/pranit/esp/esp-idf/components/hal /home/pranit/esp/esp-idf/components/heap /home/pranit/esp/esp-idf/components/log /home/pranit/esp/Be_project/VL53/examples/vl53-example/main /home/pranit/esp/esp-idf/components/mbedtls /home/pranit/esp/esp-idf/components/newlib /home/pranit/esp/esp-idf/components/partition_table /home/pranit/esp/esp-idf/components/pthread /home/pranit/esp/esp-idf/components/soc /home/pranit/esp/esp-idf/components/spi_flash /home/pranit/esp/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/pranit/esp/Be_project/VL53/examples/vl53-example/build
+[1/14] Performing build step for 'bootloader'
+[1/1] cd /home/pranit/esp/Be_project/VL53/examples/vl53-example/build/bootloader/esp-idf/esptool_py && /home/pranit/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/pranit/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/pranit/esp/Be_project/VL53/examples/vl53-example/build/bootloader/bootloader.bin
+Bootloader binary size 0x5320 bytes. 0x2ce0 bytes (35%) free.
+[2/12] Building C object esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj
+[3/12] Linking C static library esp-idf/esp_app_format/libesp_app_format.a
+[4/12] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/vl53-example.c.obj
+[5/12] Building C object esp-idf/VL53/CMakeFiles/__idf_VL53.dir/src/VL53L0X.c.obj
+[6/12] Linking C static library esp-idf/VL53/libVL53.a
+[7/12] Linking C static library esp-idf/main/libmain.a
+[8/12] Generating ld/sections.ld
+[9/12] Linking CXX executable vl53-example.elf
+[10/12] Generating binary image from built executable
+esptool.py v4.7.dev3
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /home/pranit/esp/Be_project/VL53/examples/vl53-example/build/vl53-example.bin
+[11/12] cd /home/pranit/esp/Be_project/VL53/examples/vl53-example/build/esp-idf/esptool_py && /home/pranit/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/pranit/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/pranit/esp/Be_project/VL53/examples/vl53-example/build/partition_table/partition-table.bin /home/pranit/esp/Be_project/VL53/examples/vl53-example/build/vl53-example.bin
+vl53-example.bin binary size 0x33260 bytes. Smallest app partition is 0x100000 bytes. 0xccda0 bytes (80%) free.
+[11/12] cd /home/pranit/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/pranit/esp/esp-idf -D "SERIAL_TOOL=/home/pranit/.espressif/python_env/idf5.2_py3.10_env/bin/python;;/home/pranit/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/pranit/esp/Be_project/VL53/examples/vl53-example/build -P /home/pranit/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/ttyACM0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 vl53-example.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.dev3
+Serial port /dev/ttyACM0
+Connecting...
+Chip is ESP32-S3 (QFN56) (revision v0.1)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: 7c:df:a1:e0:a4:bc
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x00043fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 21280 bytes to 13519...
+Writing at 0x00000000... (100 %)
+Wrote 21280 bytes (13519 compressed) at 0x00000000 in 0.4 seconds (effective 426.2 kbit/s)...
+Hash of data verified.
+Compressed 209504 bytes to 114691...
+Writing at 0x00010000... (12 %)
+Writing at 0x0001c95a... (25 %)
+Writing at 0x00022333... (37 %)
+Writing at 0x00028872... (50 %)
+Writing at 0x0002f329... (62 %)
+Writing at 0x00037194... (75 %)
+Writing at 0x0003cd74... (87 %)
+Writing at 0x00043260... (100 %)
+Wrote 209504 bytes (114691 compressed) at 0x00010000 in 2.3 seconds (effective 727.4 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 633.5 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

@@ -1,0 +1,6 @@
+dependencies:
+  Be_project/VL53:
+    version: "*"
+
+
+    override_path: '../../../'

@@ -1,0 +1,58 @@
+[0;32mI (108) esp_image: segment 1: paddr=00019798 vaddr=3fc92d) spi_flash: Detected size(8192k) larger than the sESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048839
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcc8
+load:0x403cc700,len:0x2e60
+entry 0x403c9924
+[0;32mI (26) boot: ESP-IDF v5.2-dev-3318-g8fc8f3f479-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jan 13 2024 16:06:54[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v0.1[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (41) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (45) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (50) boot: Enabling RNG early entropy source...[0m
+[0;32mI (55) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (66) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (74) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (81) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (89) boot: End of partition table[0m
+[0;32mI (93) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=09770h ( 38768) map[0m
+[0;32mI (108) esp_image: segment 1: paddr=00019798 vaddr=3fc92d00 size=027e0h ( 10208) load[0m
+[0;32mI (112) esp_image: segment 2: paddr=0001bf80 vaddr=40374000 size=04098h ( 16536) load[0m
+[0;32mI (122) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=18650h ( 99920) map[0m
+[0;32mI (145) esp_image: segment 4: paddr=00038678 vaddr=40378098 size=0abc0h ( 43968) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (184) cpu_start: Pro cpu start user code[0m
+[0;32mI (184) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (184) cpu_start: Application information:[0m
+[0;32mI (187) cpu_start: Project name:     vl53-example[0m
+[0;32mI (192) cpu_start: App version:      81f7260-dirty[0m
+[0;32mI (198) cpu_start: Compile time:     Jan 20 2024 01:19:46[0m
+[0;32mI (204) cpu_start: ELF file SHA256:  390a4d22d...[0m
+[0;32mI (209) cpu_start: ESP-IDF:          v5.2-dev-3318-g8fc8f3f479-dirty[0m
+[0;32mI (216) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (221) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (226) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (231) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (238) heap_init: At 3FC95D00 len 00053A10 (334 KiB): DRAM[0m
+[0;32mI (244) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (251) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (257) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (264) spi_flash: detected chip: gd[0m
+[0;32mI (267) spi_flash: flash io: dio[0m
+[0;33mW (271) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (285) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (295) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (302) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (309) main_task: Started on CPU0[0m
+[0;32mI (319) main_task: Calling app_main()[0m
+Error initializing VL53L0X: SPAD Timeout

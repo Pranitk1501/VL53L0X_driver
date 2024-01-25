@@ -1,0 +1,21 @@
+[0/1] Re-running CMake...
+-- Building ESP-IDF components for target esp32s3
+Processing 2 dependencies:
+[1/2] Be_project/VL53 (*)
+[2/2] idf (5.2.0)
+-- Project sdkconfig file /home/pranit/esp/Be_project/VL53/examples/vl53-example/sdkconfig
+-- Compiler supported targets: xtensa-esp32s3-elf
+-- App "vl53-example" version: b56260d-dirty
+-- Adding linker script /home/pranit/esp/Be_project/VL53/examples/vl53-example/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/pranit/esp/esp-idf/components/esp_system/ld/esp32s3/sections.ld.in
+-- Adding linker script /home/pranit/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script /home/pranit/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script /home/pranit/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script /home/pranit/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script /home/pranit/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
+-- Adding linker script /home/pranit/esp/esp-idf/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+-- Components: VL53 app_update bootloader bootloader_support cxx driver efuse esp_app_format esp_bootloader_format esp_common esp_hw_support esp_mm esp_partition esp_pm esp_ringbuf esp_rom esp_system esp_timer esptool_py freertos hal heap log main mbedtls newlib partition_table pthread soc spi_flash xtensa
+-- Component paths: /home/pranit/esp/Be_project/VL53 /home/pranit/esp/esp-idf/components/app_update /home/pranit/esp/esp-idf/components/bootloader /home/pranit/esp/esp-idf/components/bootloader_support /home/pranit/esp/esp-idf/components/cxx /home/pranit/esp/esp-idf/components/driver /home/pranit/esp/esp-idf/components/efuse /home/pranit/esp/esp-idf/components/esp_app_format /home/pranit/esp/esp-idf/components/esp_bootloader_format /home/pranit/esp/esp-idf/components/esp_common /home/pranit/esp/esp-idf/components/esp_hw_support /home/pranit/esp/esp-idf/components/esp_mm /home/pranit/esp/esp-idf/components/esp_partition /home/pranit/esp/esp-idf/components/esp_pm /home/pranit/esp/esp-idf/components/esp_ringbuf /home/pranit/esp/esp-idf/components/esp_rom /home/pranit/esp/esp-idf/components/esp_system /home/pranit/esp/esp-idf/components/esp_timer /home/pranit/esp/esp-idf/components/esptool_py /home/pranit/esp/esp-idf/components/freertos /home/pranit/esp/esp-idf/components/hal /home/pranit/esp/esp-idf/components/heap /home/pranit/esp/esp-idf/components/log /home/pranit/esp/Be_project/VL53/examples/vl53-example/main /home/pranit/esp/esp-idf/components/mbedtls /home/pranit/esp/esp-idf/components/newlib /home/pranit/esp/esp-idf/components/partition_table /home/pranit/esp/esp-idf/components/pthread /home/pranit/esp/esp-idf/components/soc /home/pranit/esp/esp-idf/components/spi_flash /home/pranit/esp/esp-idf/components/xtensa
+-- Configuring done
+FAILED: build.ninja 
+/usr/bin/cmake --regenerate-during-build -S/home/pranit/esp/Be_project/VL53/examples/vl53-example -B/home/pranit/esp/Be_project/VL53/examples/vl53-example/build

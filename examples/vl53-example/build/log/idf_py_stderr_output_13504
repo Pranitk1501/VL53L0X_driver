@@ -1,0 +1,15 @@
+CMake Error at /home/pranit/esp/esp-idf/tools/cmake/component.cmake:250 (message):
+  ERROR: Cannot parse the manifest file.  Please check that
+
+  	/home/pranit/esp/Be_project/VL53/idf_component.yml
+
+  is valid YAML file
+
+  
+
+Call Stack (most recent call first):
+  /home/pranit/esp/esp-idf/tools/cmake/build.cmake:578 (__component_get_requirements)
+  /home/pranit/esp/esp-idf/tools/cmake/project.cmake:548 (idf_build_process)
+  CMakeLists.txt:9 (project)
+
+
