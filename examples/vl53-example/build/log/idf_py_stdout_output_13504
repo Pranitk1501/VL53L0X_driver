@@ -1,6 +1,0 @@
--- Building ESP-IDF components for target esp32s3
-Processing 2 dependencies:
-[1/2] Be_project/VL53 (*)
-[2/2] idf (5.2.0)
--- Configuring incomplete, errors occurred!
-See also "/home/pranit/esp/Be_project/VL53/examples/vl53-example/build/CMakeFiles/CMakeOutput.log".

@@ -1,5 +1,0 @@
-[1/12] Performing build step for 'bootloader'
-[1/1] cd /home/pranit/esp/Be_project/VL53/examples/vl53-example/build/bootloader/esp-idf/esptool_py && /home/pranit/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/pranit/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/pranit/esp/Be_project/VL53/examples/vl53-example/build/bootloader/bootloader.bin
-Bootloader binary size 0x5320 bytes. 0x2ce0 bytes (35%) free.
-[2/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/vl53-example.c.obj
-[3/10] Building C object esp-idf/VL53/CMakeFiles/__idf_VL53.dir/src/VL53L0X.c.obj
