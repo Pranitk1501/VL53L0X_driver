@@ -1,14 +1,14 @@
 #include "VL53L0X.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
-
+#include "driver/gpio.h"
 
 
 // Define configuration values
 #define I2C_PORT 0
 #define SCL_PIN 15
 #define SDA_PIN 18
-#define XSHUT_PIN -1 
+#define XSHUT_PIN 3 
 
 
 
@@ -23,8 +23,14 @@ void app_main() {
     //     .did_timeout = 0,
     //     .i2c_fail = 0
     // };
+    gpio_pad_select_gpio(XSHUT_PIN);
+   gpio_set_direction(XSHUT_PIN, GPIO_MODE_INPUT);
 
-      vl53l0x_t *sensor = vl53l0x_config(I2C_PORT, SCL_PIN, SDA_PIN, XSHUT_PIN, 0x29, 1);
+   // Read initial XSHUT value
+   int xshut_value = gpio_get_level(XSHUT_PIN);
+
+   // Configure VL53L0X with dynamic XSHUT value
+   vl53l0x_t *sensor = vl53l0x_config(I2C_PORT, SCL_PIN, SDA_PIN, xshut_value, 0x29, 2);
 
     if (sensor == NULL) {
         printf("Error configuring VL53L0X sensor\n");
@@ -53,7 +59,15 @@ void app_main() {
     }
 
     // Stopping continuous measurement
-    vl53l0x_stopContinuous(sensor);
     // vl53l0x_end(sensor);
+
+    for (int i = 0; i < 100; ++i) {
+        uint16_t distance = vl53l0x_readRangeContinuousMillimeters(sensor);
+        printf("Distance2: %u mm\n", distance);
+        vTaskDelay(pdMS_TO_TICKS(100)); // Delay for 100 ms
+    }
+
+    // vl53l0x_stopContinuous(sensor);
+
     vTaskDelete(NULL);
 }
